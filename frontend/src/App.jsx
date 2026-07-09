@@ -6,6 +6,7 @@ import Expertise from "./sections/Expertise/Expertise";
 import Experience from "./sections/Experience/Experience";
 import Hero from "./sections/Hero/Hero";
 import Skills from "./sections/Skills/Skills";
+import ProfessionalApproach from "./sections/ProfessionalApproach/ProfessionalApproach";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <ProfessionalApproach />
         <Expertise />
         <Experience />
         <Education />
