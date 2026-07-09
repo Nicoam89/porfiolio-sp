@@ -1,9 +1,43 @@
-import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { profileData } from "../../data/profileData";
 import "./Contact.scss";
 
+const LinkedinIcon = ({ size = 22 }) => (
+  <svg
+    aria-hidden="true"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M2 9h4v12H2z"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M4 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
 const Contact = () => {
   const linkedinUrl = `https://${profileData.contact.linkedin}`;
+  const phoneHref = profileData.contact.phone.replace(/\s+/g, "");
 
   return (
     <section className="contact section-padding" id="contacto">
@@ -32,7 +66,7 @@ const Contact = () => {
             </div>
           </a>
 
-          <a href={`tel:${profileData.contact.phone}`} className="contact__item">
+          <a href={`tel:${phoneHref}`} className="contact__item">
             <Phone size={22} />
             <div>
               <span>Teléfono</span>
@@ -46,7 +80,7 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Linkedin size={22} />
+            <LinkedinIcon size={22} />
             <div>
               <span>LinkedIn</span>
               <strong>{profileData.contact.linkedin}</strong>
@@ -62,7 +96,7 @@ const Contact = () => {
           </div>
 
           <a
-            href="/cv-stephanie.pdf"
+            href="/CV_Stephanie_Pinazo_Trabajo_Social.pdf"
             download
             className="contact__download"
           >
