@@ -22,7 +22,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="/cv-stephanie.pdf"
+              href="https://drive.google.com/file/d/168H4-ZUZO5_ZC5B_H8DUm92gWTl_alvl/view?usp=sharing"
               className="hero__button hero__button--secondary"
               download
             >

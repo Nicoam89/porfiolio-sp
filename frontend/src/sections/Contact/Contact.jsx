@@ -96,7 +96,7 @@ const Contact = () => {
           </div>
 
           <a
-            href="/CV_Stephanie_Pinazo_Trabajo_Social.pdf"
+            href="https://drive.google.com/file/d/168H4-ZUZO5_ZC5B_H8DUm92gWTl_alvl/view?usp=sharing"
             download
             className="contact__download"
           >
