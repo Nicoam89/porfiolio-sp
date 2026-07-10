@@ -87,16 +87,20 @@ const Contact = () => {
             </div>
           </a>
 
-          <div className="contact__item">
+          <a className="contact__item"
+          href="https://maps.app.goo.gl/vkh24djB7kqSSezi6"
+          target="_blank"
+          >
             <MapPin size={22} />
             <div>
               <span>Ubicación</span>
               <strong>{profileData.location}</strong>
             </div>
-          </div>
+          </a>
 
           <a
             href="https://drive.google.com/file/d/168H4-ZUZO5_ZC5B_H8DUm92gWTl_alvl/view?usp=sharing"
+            
             download
             className="contact__download"
           >
