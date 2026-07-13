@@ -37,7 +37,7 @@ const LinkedinIcon = ({ size = 22 }) => (
 
 const Contact = () => {
   const linkedinUrl = `https://${profileData.contact.linkedin}`;
-  const phoneHref = profileData.contact.phone.replace(/\s+/g, "");
+  const whatsappHref = `https://wa.me/549${profileData.contact.phone.replace(/\s+/g, "")}`;
 
   return (
     <section className="contact section-padding" id="contacto">
@@ -66,7 +66,12 @@ const Contact = () => {
             </div>
           </a>
 
-          <a href={`tel:${phoneHref}`} className="contact__item">
+          <a
+            href={whatsappHref}
+            className="contact__item"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Phone size={22} />
             <div>
               <span>Teléfono</span>
