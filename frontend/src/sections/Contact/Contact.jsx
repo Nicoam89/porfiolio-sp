@@ -92,9 +92,11 @@ const Contact = () => {
             </div>
           </a>
 
-          <a className="contact__item"
-          href="https://maps.app.goo.gl/vkh24djB7kqSSezi6"
-          target="_blank"
+        <a
+            className="contact__item"
+            href="https://maps.app.goo.gl/vkh24djB7kqSSezi6"
+            target="_blank"
+            rel="noreferrer"
           >
             <MapPin size={22} />
             <div>
@@ -104,9 +106,9 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://drive.google.com/file/d/168H4-ZUZO5_ZC5B_H8DUm92gWTl_alvl/view?usp=sharing"
-            
-            download
+            href="/CV_Stephanie_Pinazo_Trabajo_Social.pdf"
+            download="CV_Stephanie_Pinazo_Trabajo_Social.pdf"
+            aria-label="Descargar CV de Stephanie Pinazo en PDF"
             className="contact__download"
           >
             Descargar CV

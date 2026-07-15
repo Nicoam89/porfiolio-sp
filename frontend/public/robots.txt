@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stephanie-pinazo.vercel.app/sitemap.xml
